@@ -12,7 +12,6 @@ import javax.servlet.*;
  * Created by LiSiYuan on 2018/1/31.
  */
 public class WebInitializer implements WebApplicationInitializer {
-    @Override
     public void onStartup(ServletContext servletContext) throws ServletException{
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
         ctx.register(MyMvcConfig.class);
