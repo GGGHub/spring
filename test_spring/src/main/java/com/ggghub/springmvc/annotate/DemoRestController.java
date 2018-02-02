@@ -13,10 +13,8 @@ import java.util.TreeMap;
 @RestController
 @RequestMapping(value = "/rest")
 public class DemoRestController {
-    @RequestMapping(value = "/getjson",produces = "application/json;charset=UTF-8")
-    public Map getjosn(DemoObj obj){
-        Map map = new TreeMap();
-        map.put("123","123312");
-        return map;
+    @RequestMapping(value = "/getjson")
+    public DemoObj getjosn(DemoObj obj){
+        return obj;
     }
 }
